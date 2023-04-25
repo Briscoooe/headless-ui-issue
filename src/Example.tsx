@@ -14,7 +14,7 @@ function ExampleWithoutEmoji() {
   const [selected, setSelected] = useState(countries[0])
 
   return (
-    <div className="bg-red-100 p-10 rounded-2xl">
+    <div className="bg-red-100 p-10 rounded-2xl w-full space-y-4">
       <span className={'text2xl font-medium'}>Example without emoji (keyboard control works)</span>
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
@@ -74,7 +74,7 @@ function ExampleWithEmoji() {
   const [selected, setSelected] = useState(countries[0])
 
   return (
-    <div className="bg-blue-100 p-10 rounded-2xl">
+    <div className="bg-blue-100 p-10 rounded-2xl w-full space-y-4">
       <span className={'text2xl font-medium'}>Example with emoji (keyboard control does NOT work)</span>
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
@@ -133,7 +133,7 @@ function ExampleWithEmoji() {
 
 function Example() {
   return (
-    <div className={'flex flex-row space-x-20'}>
+    <div className={'flex flex-row space-x-20 p-10'}>
       <ExampleWithoutEmoji />
       <ExampleWithEmoji />
     </div>
