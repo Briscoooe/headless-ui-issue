@@ -133,7 +133,7 @@ function ExampleWithEmoji() {
 
 function Example() {
   return (
-    <div className={'flex flex-col space-y-40'}>
+    <div className={'flex flex-row space-x-20'}>
       <ExampleWithoutEmoji />
       <ExampleWithEmoji />
     </div>
